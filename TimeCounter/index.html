@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odliczanie czasu</title>
+    <script src="https://kit.fontawesome.com/76298c6d73.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="counter-app">
+
+        <div class="settings active">
+            <h3>ustawienia</h3>
+            <div class="nameAdvent">
+                <label for="event-name">Nazwa wydarzenia</label>
+                <input id="event-name" type="text" value="Nowy rok">
+
+            </div>
+            <div class="dayAdvent">
+
+
+            </div>
+
+
+            <table class="date">
+
+                <tr>
+                    <td> <label for="event-day">Dzień:</label></td>
+                    <td> <label for="event-month">Miesiąc:</label></td>
+                    <td> <label for="event-year">Rok:</label></td>
+
+                </tr>
+                <tr>
+                    <td><input type="number" id="event-day" maxlength="2" value="1" min="1"></td>
+                    <td><input type="number" id="event-month" maxlength="2" value="1" min="1" max="12"></td>
+                    <td><input type="number" id="event-year" maxlength="4" value="2021" min="0"></td>
+                </tr>
+            </table>
+
+
+            <label for="event-image">Link do obrazka:</label>
+
+            <input type="text" id="event-image" value="default.jpg">
+            <button class="save">Zapisz</button>
+
+
+        </div>
+
+
+        <div class="app-body">
+            <div class="imageFront">
+                <button class="settingsBtn"><i class="fas fa-sliders-h"></i></button>
+            </div>
+            <div class="time-section">
+
+                <h2><span class="event">Nowy rok </span> za:</h2>
+
+                <div class="time-cards">
+                    <div class="card">
+                        <p class="days-count number">1</p>
+                        <p class="cardTitle">Dni</p>
+                    </div>
+
+                    <div class="card">
+                        <p class="hours-count number">1</p>
+                        <p class="cardTitle">Godzin</p>
+                    </div>
+
+                    <div class="card">
+                        <p class="minute-count number">1</p>
+                        <p class="cardTitle">Minut</p>
+                    </div>
+
+                    <div class="card">
+                        <p class="seconds-count number">1</p>
+                        <p class="cardTitle">Sekund</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="skrypt.js"></script>
+</body>
+
+</html>
